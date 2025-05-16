@@ -84,7 +84,7 @@ export default function MovieList({ overrideSlug, forceShowAll = false }: MovieL
 
     return (
         <div className="flex flex-col items-center w-full">
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 w-full">
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6 w-full">
                 {listData && listData.length > 0 && (
                     listData.map((movie: IMovie, index: number) => (
                         <div key={index}>
@@ -108,7 +108,7 @@ export default function MovieList({ overrideSlug, forceShowAll = false }: MovieL
             {!loading && hasMore && (
                 <Button
                 onClick={loadMoreMovies}
-                className="mt-6 text-sm cursor-pointer bg-accent text-white rounded-md hover:bg-opacity-90 transition-all"
+                className="mt-4 md:mt-6 text-sm cursor-pointer bg-blue-600 hover:bg-blue-700 text-white rounded-md transition-all"
                 >
                     Xem Thêm »
                 </Button>

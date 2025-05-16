@@ -9,6 +9,8 @@ interface FooterProps {
 }
 
 const Footer: React.FC<FooterProps> = ({ copyRight, description }) => {
+    console.log(copyRight)
+    console.log(description)
     const categories = [
         { name: 'Truyện Tranh', href: '/truyen-tranh' },
         { name: 'ThemPhim', href: '/themphim' },
@@ -40,15 +42,21 @@ const Footer: React.FC<FooterProps> = ({ copyRight, description }) => {
 
     return (
         <footer className="w-full bg-black text-white border-t border-gray-800">
-            <div className="container mx-auto py-6 flex justify-between items-start">
-                <div className="mb-6 px-4 md:w-2/3">
-                    <div className="flex items-center mb-4 sm:mb-0">
-                        <Link href="/" className="flex items-center">
-                            <span className="text-2xl font-bold">thiemJAV</span>
+            <div className="p-4 md:p-8 container mx-auto md:px-0 flex flex-col md:flex-row justify-between items-start">
+                <div className="mb-4 md:mb-0 md:w-2/3">
+                    <div className="w-[140px] flex items-center">
+                        <Link href="/" className="w-full relative aspect-[300/58]">
+                            <Image
+                                src='https://themjav.com/resources/logo-dark.svg'
+                                alt="Logo"
+                                fill
+                                className="object-contain"
+                                sizes="140px"
+                            />
                         </Link>
                     </div>
                 </div>
-                <div className="flex flex-wrap gap-2 px-4 pt-2 border-t border-gray-800">
+                <div className="flex flex-wrap gap-2">
                     {categories.map((category, index) => (
                         <Link
                             key={index}

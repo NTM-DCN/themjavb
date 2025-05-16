@@ -11,7 +11,7 @@ import {
 } from "@/components/ui/navigation-menu";
 import Link from "next/link";
 import Image from "next/image";
-import { Menu, Search, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 
 interface HeaderProps {
     brand?: string;
@@ -86,7 +86,7 @@ const Header: React.FC<HeaderProps> = ({ brand }) => {
     
     return (
         <header className="sm:px-6 bg-background sticky top-0 z-50 border-b border-b border-[#403f3f80]">
-            <div className="container mx-auto px-2 wrap py-2 md:px-0 flex justify-center items-center">
+            <div className="container mx-auto px-2 wrap py-2 md:px-0 flex justify-between md:justify-center items-center">
                 <div className="lg:hidden mr-4">
                     <button 
                         ref={menuButtonRef}
@@ -103,7 +103,7 @@ const Header: React.FC<HeaderProps> = ({ brand }) => {
                         <Link href="/" className="relative block w-32 h-8">
                             <div className="relative w-full h-full">
                                 <Image
-                                    src='/logo.png'
+                                    src='https://themjav.com/resources/logo-dark.svg'
                                     alt="Logo"
                                     fill
                                     className="object-contain"
@@ -146,7 +146,7 @@ const Header: React.FC<HeaderProps> = ({ brand }) => {
                     zIndex: 40
                 }}
             >
-                <div className="bg-[var(--background-header)] h-full overflow-y-auto">
+                <div className="bg-background h-full overflow-y-auto">
                     <nav className="p-4">
                         <ul className="space-y-4">
                             {categories.map((item, index) => (

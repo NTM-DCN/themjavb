@@ -146,7 +146,7 @@
 }
 
 body, html {
-  background: linear-gradient(to bottom, hsl(246deg 62.24% 8.34%), hsl(224deg 79.71% 18.48%) 100vh, hsl(0deg 0% 0%) 200vh) !important;;
+  background: linear-gradient(to bottom, hsl(246deg 62.24% 8.34%), hsl(224deg 79.71% 18.48%) 100vh, #470e0e) !important;;
   color: hsl(var(--color-foreground));
   font-size: 16px;
 }

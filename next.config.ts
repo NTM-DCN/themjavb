@@ -10,7 +10,7 @@ const nextConfig: NextConfig = {
         ];
     },
     images: {
-        domains: ['apimovie.shenlong.cloud'],
+        domains: ['apimovie.shenlong.cloud', 'themjav.com', 'picsum.photos'],
     },
 };
 

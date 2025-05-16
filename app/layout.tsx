@@ -69,7 +69,7 @@ export default async function RootLayout({
                 >
                     <Header brand={brand}/>
                     <div className="flex flex-1">
-                        <main className="flex-1">{children}</main>
+                        <main className="flex-1 container mx-auto py-4 md:py-8">{children}</main>
                     </div>
                     {/* {description && copyRight && (( */}
                         <Footer copyRight={copyRight} description={description} />

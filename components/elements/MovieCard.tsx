@@ -1,7 +1,5 @@
 'use client';
 
-import { Card, CardHeader, CardTitle } from "@/components/ui/card";
-import { PlayCircle } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
