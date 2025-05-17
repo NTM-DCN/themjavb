@@ -103,7 +103,7 @@ const Header: React.FC<HeaderProps> = ({ brand }) => {
                         <Link href="/" className="relative block w-32 h-8">
                             <div className="relative w-full h-full">
                                 <Image
-                                    src='https://themjav.com/resources/logo-dark.svg'
+                                    src='/logothemjav.png'
                                     alt="Logo"
                                     fill
                                     className="object-contain"

@@ -45,13 +45,13 @@ const Footer: React.FC<FooterProps> = ({ copyRight, description }) => {
             <div className="p-4 md:p-8 container mx-auto md:px-0 flex flex-col md:flex-row justify-between items-start">
                 <div className="mb-4 md:mb-0 md:w-2/3">
                     <div className="w-[140px] flex items-center">
-                        <Link href="/" className="w-full relative aspect-[300/58]">
+                        <Link href="/" className="w-full relative  block w-32 h-8">
                             <Image
-                                src='https://themjav.com/resources/logo-dark.svg'
+                                src='/logothemjav.png'
                                 alt="Logo"
                                 fill
                                 className="object-contain"
-                                sizes="140px"
+                                sizes="(max-width: 768px) 192px, 256px"
                             />
                         </Link>
                     </div>
